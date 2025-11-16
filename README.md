@@ -9,10 +9,10 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Gabriel Felicio Dias
+- Matricula:815710
+- Proposta de projeto escolhida: Grafico de Controle de finanças
+- Breve descrição sobre seu projeto: informações digitadas pelo usuario e apos isso gera o grafico em chart js de acordo com as informações
 
 **Print da tela com a implementação**
 
