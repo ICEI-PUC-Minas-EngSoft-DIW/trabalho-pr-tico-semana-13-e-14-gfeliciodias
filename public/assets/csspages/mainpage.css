@@ -1,0 +1,154 @@
+/* ======= RESET css======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #dddddd;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.conteudo {
+  text-align: center;
+}
+
+
+.grafico-frame {
+  width: 600px;
+  height: 350px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.grafico-frame:hover {
+  transform: scale(1.02);
+}
+
+.grafico-frame p {
+  color: #555;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.botoes button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.botoes button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 700px) {
+  .grafico-frame {
+    width: 90%;
+    height: 250px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .botoes button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
